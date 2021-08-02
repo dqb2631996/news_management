@@ -6,7 +6,8 @@
 package newsManagement;
 
 interface INews {  
-abstract void display();  
+    void display();
+    
 }
 
 
