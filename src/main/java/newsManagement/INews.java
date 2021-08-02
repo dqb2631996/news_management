@@ -5,14 +5,14 @@
  */
 package newsManagement;
 
-interface INew {  
-void display();  
+interface INews {  
+    void display();
+    
 }
-class INews implements INew {
 
-    @Override
-    public void display() {
-    }
+
+
     
     
-}
+    
+
