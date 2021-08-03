@@ -5,6 +5,8 @@
  */
 package newsManagement;
 
+import java.util.Scanner;
+
 public class News implements INews{
     int id;
     String title;
@@ -13,7 +15,7 @@ public class News implements INews{
     String content;
     Float avarageRate;
     // cau d tao mang co 3 phan tu
-    int rateList [] = new int [3];
+    int rateList [] = new int [ 3];
 @Override
 // cau c : display() in ra cac thuoc tinh
     public void display(){
@@ -70,6 +72,10 @@ public class News implements INews{
 
     // ham dung
     // cau b : tao ham dung
+    
+    public News() {
+    }
+
     public News(int id, String title, String publistDay, String author, String content, Float avarageRate) {
         this.id = id;
         this.title = title;
@@ -78,9 +84,11 @@ public class News implements INews{
         this.content = content;
         this.avarageRate = avarageRate;
     }
+    
     public void calculate(){
        avarageRate = (float)(rateList[0] + rateList[1] +rateList[2])/3;
     }
+
     
     
     
