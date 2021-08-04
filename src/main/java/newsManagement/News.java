@@ -10,10 +10,10 @@ import java.util.Scanner;
 public class News implements INews{
     int id;
     String title;
-    String publistDay;
+    String publishDay;
     String author;
     String content;
-    Float avarageRate;
+    Float averageRate;
     // cau d tao mang co 3 phan tu
     int rateList [] = new int [ 3];
 @Override
@@ -21,10 +21,10 @@ public class News implements INews{
     public void display(){
         System.out.println(id);
         System.out.println(title);
-        System.out.println(publistDay);
+        System.out.println(publishDay);
         System.out.println(author);
         System.out.println(content);
-        System.out.println(avarageRate);
+        System.out.println(averageRate);
     }
     public int getId() {
         return id;
@@ -42,12 +42,12 @@ public class News implements INews{
         this.title = title;
     }
 
-    public String getPublistDay() {
-        return publistDay;
+    public String getPublishDay() {
+        return publishDay;
     }
 
     public void setPublistDay(String publistDay) {
-        this.publistDay = publistDay;
+        this.publishDay = publistDay;
     }
 
     public String getAuthor() {
@@ -66,8 +66,8 @@ public class News implements INews{
         this.content = content;
     }
 
-    public Float getAvarageRate() {
-        return avarageRate;
+    public Float getAverageRate() {
+        return averageRate;
     }
 
     // ham dung
@@ -79,14 +79,14 @@ public class News implements INews{
     public News(int id, String title, String publistDay, String author, String content, Float avarageRate) {
         this.id = id;
         this.title = title;
-        this.publistDay = publistDay;
+        this.publishDay = publishDay;
         this.author = author;
         this.content = content;
-        this.avarageRate = avarageRate;
+        this.averageRate = averageRate;
     }
     
     public void calculate(){
-       avarageRate = (float)(rateList[0] + rateList[1] +rateList[2])/3;
+       averageRate = (float)(rateList[0] + rateList[1] +rateList[2])/3;
     }
 
     
