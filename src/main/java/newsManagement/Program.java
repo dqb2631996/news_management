@@ -26,14 +26,14 @@ public class Program {
         
         Scanner sc = new Scanner(System.in);
         News news = new News();
-        News newsarrayLis[] = new News[arrayList.length+1];
+        News newsarrayList[] = new News[arrayList.length+1];
         for (int i = 0; i < arrayList.length; i++) {
-                newsarrayLis[i] = arrayList[i];
+                newsarrayList[i] = arrayList[i];
         }
         System.out.println("1");
         news.title = sc.nextLine();
         System.out.println("2");
-        news.publistDay = sc.nextLine();
+        news.publishDay = sc.nextLine();
         System.out.println("3");
         news.author = sc.nextLine();
         System.out.println("4");
@@ -46,8 +46,8 @@ public class Program {
         System.out.println("notable 3:");
         String notable3 = sc.nextLine();
         
-         newsarrayLis[arrayList.length] = news;
-         arrayList = newsarrayLis;
+         newsarrayList[arrayList.length] = news;
+         arrayList = newsarrayList;
     }
     
     // bài 5
@@ -69,7 +69,7 @@ public class Program {
             }else if(nhap == 3){
                 News news = new News();
                 news.calculate();
-                System.out.println("Danh Gia Trung Binh : " + news.avarageRate);
+                System.out.println("Danh Gia Trung Binh : " + news.averageRate);
                 display();
             }else if(nhap == 4){
                 break;
